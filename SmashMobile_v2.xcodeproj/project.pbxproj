@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0515C3D820C077E700509066 /* IndividualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515C3D720C077E700509066 /* IndividualViewController.swift */; };
 		0599900E20C052090019809F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599900D20C052090019809F /* AppDelegate.swift */; };
-		0599901020C052090019809F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599900F20C052090019809F /* FirstViewController.swift */; };
-		0599901220C052090019809F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599901120C052090019809F /* SecondViewController.swift */; };
-		0599901520C052090019809F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0599901320C052090019809F /* Main.storyboard */; };
+		0599901520C052090019809F /* HiringManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0599901320C052090019809F /* HiringManager.storyboard */; };
 		0599901720C0520A0019809F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0599901620C0520A0019809F /* Assets.xcassets */; };
 		0599901A20C0520A0019809F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0599901820C0520A0019809F /* LaunchScreen.storyboard */; };
 		0599902520C0520A0019809F /* SmashMobile_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599902420C0520A0019809F /* SmashMobile_v2Tests.swift */; };
@@ -35,11 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0515C3D720C077E700509066 /* IndividualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualViewController.swift; sourceTree = "<group>"; };
 		0599900A20C052090019809F /* SmashMobile_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashMobile_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0599900D20C052090019809F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0599900F20C052090019809F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0599901120C052090019809F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		0599901420C052090019809F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0599901420C052090019809F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HiringManager.storyboard; sourceTree = "<group>"; };
 		0599901620C0520A0019809F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0599901920C0520A0019809F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0599901B20C0520A0019809F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +97,9 @@
 		0599900C20C052090019809F /* SmashMobile_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				0599903E20C05D570019809F /* Recruiter */,
+				0599903D20C05D460019809F /* HiringManager */,
 				0599900D20C052090019809F /* AppDelegate.swift */,
-				0599900F20C052090019809F /* FirstViewController.swift */,
-				0599901120C052090019809F /* SecondViewController.swift */,
-				0599901320C052090019809F /* Main.storyboard */,
 				0599901620C0520A0019809F /* Assets.xcassets */,
 				0599901820C0520A0019809F /* LaunchScreen.storyboard */,
 				0599901B20C0520A0019809F /* Info.plist */,
@@ -126,6 +123,22 @@
 				0599903120C0520A0019809F /* Info.plist */,
 			);
 			path = SmashMobile_v2UITests;
+			sourceTree = "<group>";
+		};
+		0599903D20C05D460019809F /* HiringManager */ = {
+			isa = PBXGroup;
+			children = (
+				0599901320C052090019809F /* HiringManager.storyboard */,
+				0515C3D720C077E700509066 /* IndividualViewController.swift */,
+			);
+			path = HiringManager;
+			sourceTree = "<group>";
+		};
+		0599903E20C05D570019809F /* Recruiter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recruiter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +247,7 @@
 			files = (
 				0599901A20C0520A0019809F /* LaunchScreen.storyboard in Resources */,
 				0599901720C0520A0019809F /* Assets.xcassets in Resources */,
-				0599901520C052090019809F /* Main.storyboard in Resources */,
+				0599901520C052090019809F /* HiringManager.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0599901220C052090019809F /* SecondViewController.swift in Sources */,
+				0515C3D820C077E700509066 /* IndividualViewController.swift in Sources */,
 				0599900E20C052090019809F /* AppDelegate.swift in Sources */,
-				0599901020C052090019809F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +309,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0599901320C052090019809F /* Main.storyboard */ = {
+		0599901320C052090019809F /* HiringManager.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0599901420C052090019809F /* Base */,
 			);
-			name = Main.storyboard;
+			name = HiringManager.storyboard;
 			sourceTree = "<group>";
 		};
 		0599901820C0520A0019809F /* LaunchScreen.storyboard */ = {
