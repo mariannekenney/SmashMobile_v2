@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +85,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="WoZ-Fh-ilj" kind="relationship" relationship="viewControllers" id="Xlw-gj-8ro"/>
-                        <segue destination="D6k-YF-MLW" kind="relationship" relationship="viewControllers" id="rvH-9B-Cui"/>
+                        <segue destination="D6k-YF-MLW" kind="relationship" relationship="viewControllers" id="Uv5-v8-OtB"/>
                         <segue destination="pKv-yV-c2T" kind="relationship" relationship="viewControllers" id="qed-9u-7dG"/>
                     </connections>
                 </tabBarController>
@@ -101,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="sent. Pending action" id="aRF-mf-Lh4">
+                            <tableViewSection headerTitle="Get more information" id="aRF-mf-Lh4">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="104" id="G1D-YR-Ptz">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="104"/>
@@ -343,7 +344,7 @@
         <!--SmashMobile-->
         <scene sceneID="J1n-Qt-tw8">
             <objects>
-                <tableViewController id="MhY-Ep-XGw" sceneMemberID="viewController">
+                <tableViewController id="MhY-Ep-XGw" customClass="JobTableViewController" customModule="SmashMobile_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="LkM-3e-geu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,17 +470,24 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="SmashMobile" id="NXJ-mb-69k">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="gear" id="iJJ-wL-6t3">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="pm4-7D-ryN">
                             <connections>
-                                <segue destination="pOV-jW-wxf" kind="presentation" id="un5-hT-2Ys"/>
+                                <action selector="back:" destination="MhY-Ep-XGw" id="A6e-cP-bHr"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ydj-uG-I7k"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="gear" id="iJJ-wL-6t3">
+                                <connections>
+                                    <segue destination="pOV-jW-wxf" kind="presentation" id="un5-hT-2Ys"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="Ydj-uG-I7k"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-ot-m7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3996" y="-396.25187406296857"/>
+            <point key="canvasLocation" x="3996" y="-396"/>
         </scene>
         <!--SmashMobile-->
         <scene sceneID="fcN-Kh-jaT">
@@ -1063,7 +1071,6 @@ Past Jobs:
         <image name="status" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="un5-hT-2Ys"/>
         <segue reference="Sci-sU-xix"/>
     </inferredMetricsTieBreakers>
 </document>

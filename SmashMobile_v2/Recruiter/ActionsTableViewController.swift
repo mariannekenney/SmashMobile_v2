@@ -19,7 +19,7 @@ class ActionsTableViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "Action", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Job Requisition", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Candidate", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "In progress vs completed", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Status", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

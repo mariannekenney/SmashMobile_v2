@@ -16,6 +16,7 @@
 		0599903020C0520A0019809F /* SmashMobile_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599902F20C0520A0019809F /* SmashMobile_v2UITests.swift */; };
 		05CB966120C18D6F0096017A /* Recruiter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CB966020C18D6F0096017A /* Recruiter.storyboard */; };
 		05CB966320C199360096017A /* ActionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB966220C199360096017A /* ActionsTableViewController.swift */; };
+		05CB966520C1A0040096017A /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB966420C1A0040096017A /* JobTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0599903120C0520A0019809F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05CB966020C18D6F0096017A /* Recruiter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recruiter.storyboard; sourceTree = "<group>"; };
 		05CB966220C199360096017A /* ActionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsTableViewController.swift; sourceTree = "<group>"; };
+		05CB966420C1A0040096017A /* JobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				05CB966020C18D6F0096017A /* Recruiter.storyboard */,
 				05CB966220C199360096017A /* ActionsTableViewController.swift */,
+				05CB966420C1A0040096017A /* JobTableViewController.swift */,
 			);
 			path = Recruiter;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0515C3D820C077E700509066 /* IndividualViewController.swift in Sources */,
+				05CB966520C1A0040096017A /* JobTableViewController.swift in Sources */,
 				0599900E20C052090019809F /* AppDelegate.swift in Sources */,
 				05CB966320C199360096017A /* ActionsTableViewController.swift in Sources */,
 			);
