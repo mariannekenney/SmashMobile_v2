@@ -14,6 +14,8 @@
 		0599901A20C0520A0019809F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0599901820C0520A0019809F /* LaunchScreen.storyboard */; };
 		0599902520C0520A0019809F /* SmashMobile_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599902420C0520A0019809F /* SmashMobile_v2Tests.swift */; };
 		0599903020C0520A0019809F /* SmashMobile_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599902F20C0520A0019809F /* SmashMobile_v2UITests.swift */; };
+		05CB966120C18D6F0096017A /* Recruiter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CB966020C18D6F0096017A /* Recruiter.storyboard */; };
+		05CB966320C199360096017A /* ActionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB966220C199360096017A /* ActionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0599902B20C0520A0019809F /* SmashMobile_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashMobile_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0599902F20C0520A0019809F /* SmashMobile_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashMobile_v2UITests.swift; sourceTree = "<group>"; };
 		0599903120C0520A0019809F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CB966020C18D6F0096017A /* Recruiter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recruiter.storyboard; sourceTree = "<group>"; };
+		05CB966220C199360096017A /* ActionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 		0599903E20C05D570019809F /* Recruiter */ = {
 			isa = PBXGroup;
 			children = (
+				05CB966020C18D6F0096017A /* Recruiter.storyboard */,
+				05CB966220C199360096017A /* ActionsTableViewController.swift */,
 			);
 			path = Recruiter;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CB966120C18D6F0096017A /* Recruiter.storyboard in Resources */,
 				0599901A20C0520A0019809F /* LaunchScreen.storyboard in Resources */,
 				0599901720C0520A0019809F /* Assets.xcassets in Resources */,
 				0599901520C052090019809F /* HiringManager.storyboard in Resources */,
@@ -274,6 +281,7 @@
 			files = (
 				0515C3D820C077E700509066 /* IndividualViewController.swift in Sources */,
 				0599900E20C052090019809F /* AppDelegate.swift in Sources */,
+				05CB966320C199360096017A /* ActionsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
